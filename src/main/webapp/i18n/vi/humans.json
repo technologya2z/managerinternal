@@ -1,0 +1,53 @@
+{
+  "cmspApp": {
+    "humans": {
+      "home": {
+        "title": "Nhân sự",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới nhân sự",
+        "createOrEditLabel": "Chỉnh sửa nhân sự",
+        "notFound": "No Humans found"
+      },
+      "created": "A new Humans is created with identifier {{ param }}",
+      "updated": "A Humans is updated with identifier {{ param }}",
+      "deleted": "A Humans is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Nhân sự"
+      },
+      "id": "ID",
+      "fullName": "Họ & Tên",
+      "code": "CIF",
+      "userName": "User Name",
+      "email": "Email",
+      "phoneNumber": "SĐT",
+      "dateOfBirth": "Ngày sinh",
+      "homePhome": "Máy lẻ",
+      "address": "Địa chỉ",
+      "wards": "Phường/Xã",
+      "district": "Quận/Huyện",
+      "province": "Tỉnh/Thành phố",
+      "joinDate": "Ngày vào",
+      "married": "Tình trạng hôn nhân",
+      "gender": "Giới tính",
+      "description": "Mô tả",
+      "application": "Ứng dụng",
+      "jobtitle": "Chức danh",
+      "department": "Phòng",
+      "jobtitleName": "Chức danh",
+      "active": "Hoạt động"
+    }
+  },
+  "managerInternalApp": {
+    "humans": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

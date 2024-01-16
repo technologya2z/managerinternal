@@ -1,0 +1,64 @@
+{
+  "cmspApp": {
+    "application": {
+      "home": {
+        "title": "Ứng dụng",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới một ứng dụng",
+        "createOrEditLabel": "Sửa thông tin ứng dụng",
+        "notFound": "No Applications found"
+      },
+      "created": "A new Application is created with identifier {{ param }}",
+      "updated": "A Application is updated with identifier {{ param }}",
+      "deleted": "A Application is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Ứng dụng"
+      },
+      "id": "ID",
+      "name": "Tên ứng dụng",
+      "code": "Mã ứng dụng",
+      "description": "Mô tả",
+      "linkSourceRepository": "Source Repository",
+      "linkCmRepository": "Cm Repository",
+      "serverlive": "Server Live",
+      "serveruat": "Server UAT",
+      "linkLive": "link Live",
+      "linkUat": "link Uat",
+      "enviroment": "Môi trường",
+      "databaseMaster": "Database Master",
+      "databaseSlave": "Database Slave",
+      "subComponent": "Cấu phần liên quan",
+      "owner": "Đầu mối",
+      "epicJira": "link Jira",
+      "dateStart": "Thời gian bắt đầu",
+      "appType": "Kiểu ứng dụng",
+      "dateGolive": "Thời gian Golive",
+      "databaseInfo": "Thông tin Database",
+      "apiIn": "Api In",
+      "apiOut": "Api Out",
+      "apiInfo": "Thông tin API",
+      "operaunit": "Đơn vị vận hành",
+      "topic": "Topic",
+      "databaseinfo": "Database",
+      "humans": "Nhân sự Owner",
+      "topics": "Topic",
+      "swaggerLink": "swagger Link",
+      "active": "Hoạt động",
+      "PVCOMBANK": "Nội bộ",
+      "PARTNER": "Đối tác"
+    }
+  },
+  "managerInternalApp": {
+    "application": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

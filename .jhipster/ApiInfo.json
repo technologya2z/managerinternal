@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085729",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "api_info",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "path",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestExample",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responseExample",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateCreate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "ApiInfo",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "apiIn",
+      "otherEntityRelationshipName": "apiInfo",
+      "relationshipName": "apiIn",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "apiOut",
+      "otherEntityRelationshipName": "apiInfo",
+      "relationshipName": "apiOut",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "apiInfo",
+      "relationshipName": "application",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

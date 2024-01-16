@@ -1,0 +1,127 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085728",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "application",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "linkSourceRepository",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "linkCmRepository",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serverlive",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serveruat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enviroment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subComponent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "epicJira",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateStart",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "appType",
+      "fieldType": "ApplicationType",
+      "fieldValues": "PVCOMBANK,PARTNER"
+    },
+    {
+      "fieldName": "dateGolive",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Application",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "topicIn",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "topicIn",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "topicOut",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "topicOut",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "apiIn",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "apiIn",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "apiOut",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "apiOut",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "apiInfo",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "apiInfo",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "topic",
+      "otherEntityRelationshipName": "application",
+      "ownerSide": true,
+      "relationshipName": "topic",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "operaUnit",
+      "otherEntityRelationshipName": "application",
+      "ownerSide": true,
+      "relationshipName": "operaunit",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "databaseInfo",
+      "otherEntityRelationshipName": "application",
+      "ownerSide": true,
+      "relationshipName": "databaseinfo",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "humans",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "humans",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

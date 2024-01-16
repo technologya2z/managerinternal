@@ -1,0 +1,40 @@
+{
+  "cmspApp": {
+    "apiOut": {
+      "home": {
+        "title": "ứng dụng đang call vào",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Create a new Api Out",
+        "createOrEditLabel": "Tạo/Sửa API đầu ra",
+        "notFound": "No Api Outs found"
+      },
+      "created": "A new Api Out is created with identifier {{ param }}",
+      "updated": "A Api Out is updated with identifier {{ param }}",
+      "deleted": "A Api Out is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Api Out"
+      },
+      "id": "ID",
+      "description": "Mô tả",
+      "requestExample": "request mẫu",
+      "responseExample": "response mẫu",
+      "linkDocument": "link tài liệu",
+      "dateConnect": "Ngày kết nối",
+      "apiInfo": "Thông tin API",
+      "application": "Ứng dụng"
+    }
+  },
+  "managerInternalApp": {
+    "apiOut": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

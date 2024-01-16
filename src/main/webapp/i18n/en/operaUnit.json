@@ -1,0 +1,41 @@
+{
+  "cmspApp": {
+    "operaUnit": {
+      "home": {
+        "title": "Đơn vị vận hành",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới đơn vị vận hành",
+        "createOrEditLabel": "Chỉnh sửa đơn vị vận hành",
+        "notFound": "No Opera Units found"
+      },
+      "created": "A new Opera Unit is created with identifier {{ param }}",
+      "updated": "A Opera Unit is updated with identifier {{ param }}",
+      "deleted": "A Opera Unit is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Đơn vị vận hành"
+      },
+      "id": "ID",
+      "name": "Tên đơn vị",
+      "code": "Mã đơn vị",
+      "address": "Địa chỉ",
+      "email": "Email",
+      "phoneNumber": "SĐT",
+      "owner": "Đầu mối",
+      "description": "Mô tả",
+      "application": "Ứng dụng"
+    }
+  },
+  "managerInternalApp": {
+    "operaUnit": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

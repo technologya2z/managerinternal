@@ -1,0 +1,41 @@
+{
+  "cmspApp": {
+    "databaseInfo": {
+      "home": {
+        "title": "Thông tin Database",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới thông tin Database",
+        "createOrEditLabel": "Sửa thông tin Database",
+        "notFound": "No Database Infos found"
+      },
+      "created": "A new Database Info is created with identifier {{ param }}",
+      "updated": "A Database Info is updated with identifier {{ param }}",
+      "deleted": "A Database Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Thông tin Database"
+      },
+      "id": "ID",
+      "name": "Tên Database",
+      "serviceName": "Service Name",
+      "userName": "username",
+      "passWord": "Password",
+      "ipServer": "Ip Server",
+      "port": "Port",
+      "dataType": "Kiểu Database",
+      "application": "Ứng dụng"
+    }
+  },
+  "managerInternalApp": {
+    "databaseInfo": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

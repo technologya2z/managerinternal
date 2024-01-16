@@ -1,0 +1,243 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType oauth2
+    baseName managerInternal
+    blueprints []
+    buildTool maven
+    cacheProvider no
+    clientFramework react
+    clientPackageManager npm
+    clientTheme none
+    creationTimestamp 1626153223949
+    databaseType sql
+    devDatabaseType postgresql
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache false
+    enableSwaggerCodegen true
+    enableTranslation true
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jhipsterVersion "7.9.3"
+    languages [vi, en]
+    messageBroker false
+    nativeLanguage vi
+    otherModules []
+    packageName vn.com.pvcombank
+    prodDatabaseType postgresql
+    reactive false
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType false
+    skipClient false
+    skipServer false
+    skipUserManagement true
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+}
+
+
+
+/*
+* Table Area luu thong tin khu vuc vung mien
+*/
+entity Area{
+    name String,//ten khu vuc
+    code String,//ma khu vuc
+    description String // Mo ta
+}
+/*
+* Table Organization lu thong tin chi nhanh
+*/
+entity Organization{
+    name String,// ten chi nhanh
+    code String,// ma chi nhanh
+    description String,// mo ta
+    address String,// dia chi
+    phoneNumber String // so dien thoai
+}
+enum DatabaseType {
+    Oracle, PostgreSQL, MySQL, MongoDB, Redis, Memcached, Mongo, Elasticsearch,Couchbase,Sqlserver
+}
+
+enum ApplicationType {
+   PVCOMBANK, PARTNER
+}
+/*
+* Table Department lu thong tin phong ban
+*/
+entity Department{
+    name String,//ten phong ban
+    code String,//ma phong ban
+    description String // Mo ta
+}
+/*
+* Table Jobtitle luu thong tin chuc danh
+*/
+entity Jobtitle{
+    name String,// ten khu vuc
+    code String,// ma khu vuc
+    description String // Mo ta
+}
+
+entity Topic{
+    name String,// ten topic
+    bootrapServer String,// bootrapserver
+    locationTopic String // Nơi đặt topic vd K8s
+    Rootproducer String // Hệ thống nguồn
+    RootTable String // bảng nguồn
+    message String // message topic
+    linkDoc String // link tài liệu
+
+}
+
+entity TopicIn{
+
+    dateConnect LocalDate //
+    description String // mo ta chuc nang API
+}
+/*
+*table store info api
+*/
+entity TopicOut{
+    description String,// mo ta chuc nang API
+    dateConnect LocalDate //
+}
+
+
+/*
+* Table Humans lu thong tin nhan vien
+*/
+entity Humans{
+    fullName String,// ho va ten
+    code String,// ma khu vuc
+    userName String,// ten truy cap/ email
+    email String,// email
+    phoneNumber String,// so dien thoai
+    dateOfBirth String,//ngay sinh
+    homePhome String,// so dien thoai nha rieng
+    address String,// dia chi nha
+    wards String,// Phuong xa
+    district String,// Quan huyen
+    province String,// tinh thanh pho
+    joinDate String,// ngay vao co quan
+    married String,// tinh trang hon nhan
+    gender String,// Gioi Tinh
+    description String,// Mo ta
+    jobtitleName String, // tên chức vụ
+}
+/*
+* table store applications
+*/
+entity Application{
+    name String, // ten ung dung
+    code String, // Ma ung dung
+    description String, // mo ta ung dung
+    linkSourceRepository String,// link repository luu tru ung dung
+    linkCmRepository String, // link tren cm
+    serverlive String, // moi truong live
+    serveruat String, // moi truong UAT
+    enviroment String, //  moi truong trien khai
+    subComponent String, // Cau phan lien quan
+    epicJira String, // ten epic yeu cau
+    dateStart LocalDate, // ngày bắt đầu
+    appType ApplicationType, // parter hoặc local
+    dateGolive LocalDate, // ngay golive
+    linklive String, // link live
+    linkUat String, // link UAT
+}
+/*
+*table store info api
+*/
+entity ApiInfo{
+    name String,// Ten API
+    path String, // link endpoint APi
+    requestExample String, // request mau
+    responseExample String, // response mau
+    dateCreate LocalDate, //
+    description String,// mo ta chuc nang API
+
+}
+/*
+*table store info api
+*/
+entity ApiIn{
+
+    dateConnect LocalDate, //
+    description String, // mo ta chuc nang API
+}
+/*
+*table store info api
+*/
+entity ApiOut{
+    description String,// mo ta chuc nang API
+    dateConnect LocalDate //
+}
+/*
+*table store infor database
+*/
+entity DatabaseInfo{
+    name String,// ten database
+    serviceName String,// ten service
+    userName String, //
+    passWord String,
+    ipServer String,
+    port String,
+    dataType DatabaseType// loai database
+}
+
+/*
+*table đơn vị vận hành
+*/
+entity OperaUnit{
+    name String, // ten đơn vị
+    code String, // mã đơn vị
+    address String, // địa chỉ
+    email String, // email
+    phoneNumber String, // số điện thoại
+    owner String, // đầu mối
+    description String, // mô tả
+}
+/*
+*Applications{databaseinfo} to Databaseinfo{applications}
+*/
+
+relationship OneToMany {
+
+	Topic{topicIn} to TopicIn{topic} ,
+    Topic{topicOut} to  TopicOut{topic},
+    Application{topicIn} to TopicIn{application},
+    Application{topicOut} to TopicOut{application},
+
+    Humans{application} to Application{humans},
+    Organization{department} to Department{organization},
+    Department{humans} to Humans{department},
+    Area{organization} to Organization{area},
+
+    ApiInfo{apiIn} to ApiIn{apiInfo} ,
+    Application{apiIn} to ApiIn{application},
+    ApiInfo{apiOut} to  ApiOut{apiInfo},
+    Application{apiOut} to ApiOut{application},
+    Application{apiInfo} to ApiInfo{application},
+}
+
+relationship ManyToMany {
+Application{topic} to Topic{application},
+Humans{jobtitle} to Jobtitle{application}
+Application{operaunit} to OperaUnit{application},
+Application{databaseinfo} to DatabaseInfo{application},
+}
+/*
+*Jobtitle{humans} to Humans{jobtitle}
+*
+*/
+
+// Set pagination options
+dto * with mapstruct
+service * with serviceImpl
+paginate * with pagination
+// Filter options
+filter *

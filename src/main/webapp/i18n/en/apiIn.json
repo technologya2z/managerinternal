@@ -1,0 +1,40 @@
+{
+  "cmspApp": {
+    "apiIn": {
+      "home": {
+        "title": "đang call đến ứng dụng",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Tạo mới Api đầu vào",
+        "createOrEditLabel": "Tạo/Sửa Api đầu vào",
+        "notFound": "No Api Ins found"
+      },
+      "created": "A new Api In is created with identifier {{ param }}",
+      "updated": "A Api In is updated with identifier {{ param }}",
+      "deleted": "A Api In is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Api In"
+      },
+      "id": "ID",
+      "dateConnect": "Ngày kết nối",
+      "description": "Mô tả",
+      "requestExample": "request mẫu",
+      "responseExample": "response mẫu",
+      "linkDocument": "link tài liệu",
+      "apiInfo": "Thông tin API",
+      "application": "Ứng dụng"
+    }
+  },
+  "managerInternalApp": {
+    "apiIn": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

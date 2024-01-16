@@ -1,0 +1,64 @@
+{
+  "applications": "*",
+  "changelogDate": "20230223061618",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "topic",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bootrapServer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "locationTopic",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rootproducer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rootTable",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "linkDoc",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Topic",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "topicIn",
+      "otherEntityRelationshipName": "topic",
+      "relationshipName": "topicIn",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "topicOut",
+      "otherEntityRelationshipName": "topic",
+      "relationshipName": "topicOut",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "topic",
+      "ownerSide": false,
+      "relationshipName": "application",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

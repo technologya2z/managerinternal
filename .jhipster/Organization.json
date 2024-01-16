@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085724",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "organization",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Organization",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "department",
+      "otherEntityRelationshipName": "organization",
+      "relationshipName": "department",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "area",
+      "otherEntityRelationshipName": "organization",
+      "relationshipName": "area",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

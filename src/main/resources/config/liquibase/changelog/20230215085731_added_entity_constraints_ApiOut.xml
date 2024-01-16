@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity ApiOut.
+    -->
+    <changeSet id="20230215085731-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="api_info_id"
+                                 baseTableName="api_out"
+                                 constraintName="fk_api_out__api_info_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="api_info"/>
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="api_out"
+                                 constraintName="fk_api_out__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity Application.
+    -->
+    <changeSet id="20230215085728-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_application__topic"
+                                 constraintName="fk_rel_application__topic__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+
+        <addForeignKeyConstraint baseColumnNames="topic_id"
+                                 baseTableName="rel_application__topic"
+                                 constraintName="fk_rel_application__topic__topic_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="topic"/>
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_application__operaunit"
+                                 constraintName="fk_rel_application__operaunit__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+
+        <addForeignKeyConstraint baseColumnNames="operaunit_id"
+                                 baseTableName="rel_application__operaunit"
+                                 constraintName="fk_rel_application__operaunit__operaunit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="opera_unit"/>
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_application__databaseinfo"
+                                 constraintName="fk_rel_application__databaseinfo__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+
+        <addForeignKeyConstraint baseColumnNames="databaseinfo_id"
+                                 baseTableName="rel_application__databaseinfo"
+                                 constraintName="fk_rel_application__databaseinfo__databaseinfo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="database_info"/>
+
+        <addForeignKeyConstraint baseColumnNames="humans_id"
+                                 baseTableName="application"
+                                 constraintName="fk_application__humans_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="humans"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085731",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "api_out",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateConnect",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "ApiOut",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "apiInfo",
+      "otherEntityRelationshipName": "apiOut",
+      "relationshipName": "apiInfo",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "apiOut",
+      "relationshipName": "application",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

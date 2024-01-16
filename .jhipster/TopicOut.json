@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230301081659",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "topic_out",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateConnect",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "TopicOut",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "topic",
+      "otherEntityRelationshipName": "topicOut",
+      "relationshipName": "topic",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "topicOut",
+      "relationshipName": "application",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

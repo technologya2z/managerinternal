@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity Topic.
+    -->
+    <changeSet id="20230223061618-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="opera_unit_id"
+                                 baseTableName="topic"
+                                 constraintName="fk_topic__opera_unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="opera_unit"/>
+
+        <addForeignKeyConstraint baseColumnNames="humans_id"
+                                 baseTableName="topic"
+                                 constraintName="fk_topic__humans_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="humans"/>
+
+        <addForeignKeyConstraint baseColumnNames="topic_id"
+                                 baseTableName="rel_topic__application"
+                                 constraintName="fk_rel_topic__application__topic_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="topic"/>
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_topic__application"
+                                 constraintName="fk_rel_topic__application__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+    </changeSet>
+</databaseChangeLog>

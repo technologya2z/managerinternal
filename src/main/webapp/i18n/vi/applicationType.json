@@ -1,0 +1,9 @@
+{
+  "cmspApp": {
+    "ApplicationType": {
+      "null": "",
+      "PVCOMBANK": "Nội bộ",
+      "PARTNER": "Đối tác"
+    }
+  }
+}

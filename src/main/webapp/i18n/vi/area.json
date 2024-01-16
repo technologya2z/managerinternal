@@ -1,0 +1,37 @@
+{
+  "cmspApp": {
+    "area": {
+      "home": {
+        "title": "Khu vực",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới",
+        "createOrEditLabel": "Thêm/Sửa Khu vực",
+        "notFound": "No Areas found"
+      },
+      "created": "A new Area is created with identifier {{ param }}",
+      "updated": "A Area is updated with identifier {{ param }}",
+      "deleted": "A Area is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Khu vực"
+      },
+      "id": "ID",
+      "name": "Tên khu vực",
+      "code": "Mã khu vực",
+      "description": "Mô tả",
+      "organization": "Organization"
+    }
+  },
+  "managerInternalApp": {
+    "area": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085732",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "database_info",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passWord",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ipServer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "port",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataType",
+      "fieldType": "DatabaseType",
+      "fieldValues": "Oracle,PostgreSQL,MySQL,MongoDB,Redis,Memcached,Mongo,Elasticsearch,Couchbase,Sql server "
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "DatabaseInfo",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "databaseinfo",
+      "ownerSide": false,
+      "relationshipName": "application",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

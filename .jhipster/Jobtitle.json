@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085726",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "jobtitle",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Jobtitle",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "humans",
+      "otherEntityRelationshipName": "jobtitle",
+      "ownerSide": false,
+      "relationshipName": "application",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

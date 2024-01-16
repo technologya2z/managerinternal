@@ -1,0 +1,38 @@
+{
+  "cmspApp": {
+    "department": {
+      "home": {
+        "title": "Phòng",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo phòng",
+        "createOrEditLabel": "Sửa thông tin phòng",
+        "notFound": "No Departments found"
+      },
+      "created": "A new Department is created with identifier {{ param }}",
+      "updated": "A Department is updated with identifier {{ param }}",
+      "deleted": "A Department is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Phòng"
+      },
+      "id": "ID",
+      "name": "Tên phòng",
+      "code": "Mã phòng",
+      "description": "Mô tả",
+      "humans": "Nhân sự",
+      "organization": "Tổ chức"
+    }
+  },
+  "managerInternalApp": {
+    "department": {
+      "created": "A new entity is created with identifier {{ param }}",
+      "updated": "A entity is updated with identifier {{ param }}",
+      "deleted": "A entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

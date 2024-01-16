@@ -1,0 +1,31 @@
+{
+  "cmspApp": {
+    "organization": {
+      "home": {
+        "title": "Tổ chức",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới Tổ chức",
+        "createOrEditLabel": "Sửa tổ chức",
+        "notFound": "No Organizations found"
+      },
+      "created": "A new Organization is created with identifier {{ param }}",
+      "updated": "A Organization is updated with identifier {{ param }}",
+      "deleted": "A Organization is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Tổ chức"
+      },
+      "id": "ID",
+      "name": "Tên tổ chức",
+      "code": "Mã tổ chức",
+      "description": "Mô tả",
+      "address": "Địa chỉ",
+      "phoneNumber": "SĐT",
+      "department": "Phòng",
+      "jobtitle": "Chức danh",
+      "area": "Khu vực"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "cmspApp": {
+    "topic": {
+      "home": {
+        "title": "Thông tin Topic",
+        "refreshListLabel": "sync",
+        "createLabel": "Add",
+        "createOrEditLabel": "Create or edit a Topic",
+        "notFound": "No Topics found"
+      },
+      "created": "A new Topic is created with identifier {{ param }}",
+      "updated": "A Topic is updated with identifier {{ param }}",
+      "deleted": "A Topic is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Topic"
+      },
+      "id": "ID",
+      "name": "Name",
+      "bootrapServer": "Bootrap Server",
+      "locationTopic": "Nơi đặt topic",
+      "rootproducer": "Data Resource",
+      "rootTable": "Bảng nguồn",
+      "operaUnit": "Đơn vị vận hành",
+      "humans": "Nhân sự owner",
+      "application": "Application",
+      "topicType": "topicType",
+      "message": "message",
+      "linkDoc": "Tài liệu",
+      "enviroment": "Môi trường",
+      "tooltip": {
+        "id": "ID",
+        "name": "Tên topic",
+        "bootrapServer": "bootrapServer",
+        "locationTopic": "Nơi đặt topic",
+        "rootproducer": "Hệ thống nguồn",
+        "rootTable": "Bảng nguồn",
+        "operaUnit": "Đơn vị vận hành",
+        "humans": "Nhân sự owner",
+        "application": "Application",
+        "topicType": "topicType",
+        "message": "message",
+        "linkDoc": "Tài liệu",
+        "enviroment": "Môi trường"
+      }
+    }
+  },
+  "managerInternalApp": {
+    "topic": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

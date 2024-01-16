@@ -1,0 +1,44 @@
+{
+  "cmspApp": {
+    "apiInfo": {
+      "home": {
+        "title": "Thông tin API",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới thông tin API",
+        "createOrEditLabel": "Sửa thông tin API",
+        "notFound": "No Api Infos found"
+      },
+      "created": "A new Api Info is created with identifier {{ param }}",
+      "updated": "A Api Info is updated with identifier {{ param }}",
+      "deleted": "A Api Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa{{ id }}?"
+      },
+      "detail": {
+        "title": "Thông tin API"
+      },
+      "id": "ID",
+      "name": "Tên API",
+      "path": "Đường dẫn",
+      "requestExample": "Request mẫu",
+      "responseExample": "Response mẫu",
+      "linkDocument": "Link tài liệu",
+      "dateCreate": "Ngày tạo",
+      "description": "Mô tả",
+      "apiIn": "Api đầu vào",
+      "apiOut": "Api đầu ra",
+      "application": "Ứng dụng",
+      "method": "method"
+    }
+  },
+  "managerInternalApp": {
+    "apiInfo": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}

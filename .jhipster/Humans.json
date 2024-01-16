@@ -1,0 +1,100 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215085727",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "humans",
+  "fields": [
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "homePhome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wards",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "district",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "province",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "joinDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "married",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobtitleName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Humans",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "humans",
+      "relationshipName": "application",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "jobtitle",
+      "otherEntityRelationshipName": "application",
+      "ownerSide": true,
+      "relationshipName": "jobtitle",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "department",
+      "otherEntityRelationshipName": "humans",
+      "relationshipName": "department",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

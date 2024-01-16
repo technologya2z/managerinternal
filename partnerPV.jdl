@@ -1,0 +1,5 @@
+entity Partner{
+    name String,//ten doi tac
+    code String,//ma doi tac
+    description String // Mo ta
+}

@@ -1,0 +1,38 @@
+{
+  "cmspApp": {
+    "jobtitle": {
+      "home": {
+        "title": "Chức danh",
+        "refreshListLabel": "Refresh",
+        "createLabel": "Tạo mới chức danh",
+        "createOrEditLabel": "Chỉnh sửa chức danh",
+        "notFound": "No Jobtitles found"
+      },
+      "created": "A new Jobtitle is created with identifier {{ param }}",
+      "updated": "A Jobtitle is updated with identifier {{ param }}",
+      "deleted": "A Jobtitle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      },
+      "detail": {
+        "title": "Chức danh"
+      },
+      "id": "ID",
+      "name": "Tên chức danh",
+      "code": "Mã chức danh",
+      "description": "Mô tả",
+      "human": "Nhân sự",
+      "organization": "Tổ chức"
+    }
+  },
+  "managerInternalApp": {
+    "jobtitle": {
+      "created": "A new Entity is created with identifier {{ param }}",
+      "updated": "A Entity is updated with identifier {{ param }}",
+      "deleted": "A Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Xóa {{ id }}?"
+      }
+    }
+  }
+}
